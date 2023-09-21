@@ -1,0 +1,14 @@
+[
+    {
+        "instance_prompt":     "photo of a <new1> car",
+        "class_prompt":         "a photo of a car, realistic",
+        "instance_data_dir":    "/localhome/cra80/Projects/diffusers/fine-tuning/datasets/exp1_fg",
+        "class_data_dir":       "/localhome/cra80/Projects/diffusers/fine-tuning/datasets/car"
+    },
+    {
+        "instance_prompt":     "photo of a <new2> road",
+        "class_prompt":         "a photo of a road, realistic",
+        "instance_data_dir":    "/localhome/cra80/Projects/diffusers/fine-tuning/datasets/exp1_bg",
+        "class_data_dir":       "/localhome/cra80/Projects/diffusers/fine-tuning/datasets/road"
+    }
+]
