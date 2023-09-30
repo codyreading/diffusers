@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MODEL_NAME="runwayml/stable-diffusion-v1-5"
-OUTPUT_DIR="/localhome/cra80/Checkpoints/custom_diffusion"
+OUTPUT_DIR="/home/cra80/Checkpoints/custom_diffusion"
 FINE_TUNE_DIR=$PWD/fine-tuning
 TOKEN="<new1>+<new2>"
 
@@ -9,7 +9,6 @@ accelerate launch examples/custom_diffusion/train_custom_diffusion.py \
   --pretrained_model_name_or_path=$MODEL_NAME  \
   --output_dir=$OUTPUT_DIR \
   --concepts_list=$FINE_TUNE_DIR/concept_list.json \
-  --with_prior_preservation --real_prior --prior_loss_weight=1.0 \
   --resolution=512  \
   --train_batch_size=2  \
   --learning_rate=1e-5  \
